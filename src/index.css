@@ -1051,3 +1051,22 @@ img {
     font-size: 26px;
   }
 }
+
+.button {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 15px 0;
+  background-color: #fdc435;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  color: #25282b;
+  transition: background 0.3s ease-in;
+}
+
+.button:hover {
+  background-color: #fdb503;
+}

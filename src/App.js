@@ -116,6 +116,7 @@ Documentation:
 
 import { Projects } from "./Projects";
 import { Title } from "./Title";
+import { ContactForm } from "./ContactForm";
 
 function App() {
   return (
@@ -141,6 +142,7 @@ function App() {
             <p className="title-white">Let's have a talk.</p>
           </div>
           <div className="contacts__col"></div>
+          <ContactForm />
         </div>
       </footer>
     </div>
