@@ -111,7 +111,7 @@ Note: each field should have a `name` attribute, it's what is used in `formData.
 
 Documentation:
   - FormData: https://developer.mozilla.org/fr/docs/Web/API/FormData/FormData
-  - FormData.get(): https://developer.mozilla.org/ru/docs/Web/API/FormData/get
+  - FormData.get(): 
 */
 
 import { Projects } from "./Projects";
