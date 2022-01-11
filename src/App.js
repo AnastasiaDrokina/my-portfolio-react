@@ -141,8 +141,9 @@ function App() {
             </p>
             <p className="title-white">Let's have a talk.</p>
           </div>
-          <div className="contacts__col"></div>
-          <ContactForm />
+          <div className="contacts__col">
+            <ContactForm />
+          </div>
         </div>
       </footer>
     </div>

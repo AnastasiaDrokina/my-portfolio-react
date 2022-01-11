@@ -1,8 +1,6 @@
-import "./index.css";
-
 function Button(props) {
   return (
-    <button className="button" type="submit">
+    <button className="btn btn--sm btn--main" type="submit">
       {props.children}
     </button>
   );
