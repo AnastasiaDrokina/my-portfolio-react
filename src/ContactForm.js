@@ -56,7 +56,7 @@ function ContactForm(props) {
           placeholder="Your message"
         ></textarea>
       </div>
-      <Button>Submit</Button>
+      <Button type="submit">Submit</Button>
     </form>
   );
 }

@@ -1,6 +1,9 @@
 import { BtnSpan } from "./BtnSpan";
 
 function Project(props) {
+  // 🐥 (extra credit 3) You can uncomment the log to see where your data is with your last change
+  // console.log(props)
+
   return (
     <article className="portfolio__item work">
       <a

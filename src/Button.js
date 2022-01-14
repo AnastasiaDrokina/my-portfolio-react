@@ -1,6 +1,10 @@
 function Button(props) {
   return (
-    <button className="btn btn--sm btn--main" type="submit">
+    <button
+      onClick={props.onClick}
+      className="btn btn--sm btn--main"
+      type={props.type}
+    >
       {props.children}
     </button>
   );

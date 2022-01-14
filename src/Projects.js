@@ -5,6 +5,7 @@ function Projects(props) {
   return (
     <div className="portfolio__list">
       {projectsData.map((item) => (
+        // 🐥 (extra credit 3) Do we really need all these props?
         <Project
           key={item.id}
           url={item.url}

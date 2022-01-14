@@ -1051,3 +1051,13 @@ img {
     font-size: 26px;
   }
 }
+
+.form--dark {
+  background-color: #25282b;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.form--dark label {
+  color: white;
+}
