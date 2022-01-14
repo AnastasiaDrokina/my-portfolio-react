@@ -4,13 +4,18 @@ import { ContactForm } from "./ContactForm";
 import { NewProjectForm } from "./NewProjectForm";
 
 function App() {
+  function handleProjectAdd(project) {
+    console.log("FORM DATA (in <App/> received from <NewProjectForm />)");
+    console.log(project);
+  }
+
   return (
     <div>
       <main>
         <section className="portfolio section" id="work">
           <div className="container">
             <Title>Projects</Title>
-            <NewProjectForm />
+            <NewProjectForm onProjectAdd={handleProjectAdd} />
             <Projects />
           </div>
         </section>

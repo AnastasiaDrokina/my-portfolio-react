@@ -1,8 +1,27 @@
 import { Button } from "./Button";
 
 function NewProjectForm(props) {
+  function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    const title = formData.get("title-field");
+    const description = formData.get("description-field");
+    const link = formData.get("link-field");
+    const imageUrl = formData.get("imageUrl-field");
+
+    const project = {
+      title: title,
+      description: description,
+      link: link,
+      imageUrl: imageUrl
+    };
+
+    props.onProjectAdd(project);
+  }
+
   return (
-    <form className="form form--dark">
+    <form className="form form--dark" onSubmit={handleSubmit}>
       <div>
         <label htmlFor="title">Title</label>
         <input id="title" type="text" name="title-field" required="required" />
@@ -20,15 +39,15 @@ function NewProjectForm(props) {
         <input id="link" type="url" name="link-field" required="required" />
       </div>
       <div>
-        <label htmlFor="image-url">Image URL</label>
+        <label htmlFor="imageUrl">Image URL</label>
         <input
-          id="image-url"
+          id="imageUrl"
           type="url"
-          name="image-url-field"
+          name="imageUrl-field"
           required="required"
         />
       </div>
-      <Button>Create Project</Button>
+      <Button type="submit">Create Project</Button>
     </form>
   );
 }
