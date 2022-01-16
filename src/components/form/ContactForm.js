@@ -1,4 +1,4 @@
-import { Button } from "./Button";
+import { Button } from "../UI/Button";
 
 function ContactForm(props) {
   function handleSubmit(event) {

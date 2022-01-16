@@ -1,7 +1,7 @@
-import { Projects } from "./Projects";
-import { Title } from "./Title";
-import { ContactForm } from "./ContactForm";
-import { NewProjectForm } from "./NewProjectForm";
+import { Projects } from "../src/components/projects/Projects";
+import { Title } from "../src/components/UI/Title";
+import { ContactForm } from "../src/components/form/ContactForm";
+import { NewProjectForm } from "../src/components/form/NewProjectForm";
 
 function App() {
   function handleProjectAdd(project) {

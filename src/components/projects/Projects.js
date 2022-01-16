@@ -1,5 +1,5 @@
-import { Project } from "./Project";
-import { projectsData } from "./projects-data";
+import { Project } from "../projects/Project";
+import { projectsData } from "../../data/projects-data";
 
 function Projects(props) {
   return (

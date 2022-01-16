@@ -1,4 +1,4 @@
-import { BtnSpan } from "./BtnSpan";
+import { BtnSpan } from "../UI/BtnSpan";
 
 function Project(props) {
   // 🐥 (extra credit 3) You can uncomment the log to see where your data is with your last change
