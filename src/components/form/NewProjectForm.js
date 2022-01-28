@@ -1,4 +1,5 @@
 import { Button } from "../UI/Button";
+import * as React from "react";
 
 function NewProjectForm(props) {
   function handleSubmit(event) {
@@ -19,6 +20,8 @@ function NewProjectForm(props) {
 
     props.onProjectAdd(project);
   }
+
+  const [text, setText] = React.useState("");
 
   return (
     <form className="form form--dark" onSubmit={handleSubmit}>
@@ -47,7 +50,10 @@ function NewProjectForm(props) {
           required="required"
         />
       </div>
-      <Button type="submit">Create Project</Button>
+      <Button onClick={() => setText("Sent !")} type="submit">
+        Create Project
+      </Button>
+      <p>{text}</p>
     </form>
   );
 }
