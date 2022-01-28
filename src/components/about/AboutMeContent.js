@@ -22,7 +22,7 @@ function AboutMeContent(props) {
         href="files/cv-anastasia-drokina.pdf"
       >
         Download my CV
-        <span class="visually-hidden">Pdf, 154Ko, open in new window</span>
+        <span className="visually-hidden">Pdf, 154Ko, open in new window</span>
       </BtnLink>
     </div>
   );

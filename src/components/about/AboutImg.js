@@ -1,10 +1,10 @@
 function AboutImg(props) {
   return (
-    <div class="about__wrapper-img">
+    <div className="about__wrapper-img">
       <picture>
         <source
           type="image/webp"
-          srcset="https://picsum.photos/id/10/350/420"
+          srcSet="https://picsum.photos/id/10/350/420"
         />
         <img
           className="work__img"

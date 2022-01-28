@@ -4,6 +4,7 @@ import { AboutMeContent } from "../src/components/about/AboutMeContent";
 import { AboutImg } from "../src/components/about/AboutImg";
 import { Projects } from "../src/components/projects/Projects";
 import { ContactForm } from "../src/components/form/ContactForm";
+import { Experience } from "./components/experience/Experience";
 // import { NewProjectForm } from "../src/components/form/NewProjectForm";
 function App() {
   // function handleProjectAdd(project) {
@@ -37,6 +38,13 @@ function App() {
           <div className="container about__container">
             <AboutMeContent />
             <AboutImg />
+          </div>
+          <div className="skills" id="skills">
+            <div className="container">
+              <div className="skills__col">
+                <Experience />
+              </div>
+            </div>
           </div>
         </section>
       </main>
