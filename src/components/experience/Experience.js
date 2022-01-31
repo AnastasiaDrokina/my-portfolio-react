@@ -4,7 +4,7 @@ import { TitleSecond } from "../UI/TitleSecond";
 function Experience(props) {
   return (
     <div>
-      <TitleSecond>Work experience</TitleSecond>
+      <TitleSecond>{props.children}</TitleSecond>
       <div className="skills__inner">
         {experiencesData.map((experience) => (
           <div key={experience.id}>
