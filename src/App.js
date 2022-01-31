@@ -1,6 +1,7 @@
 import { TitleFirst } from "../src/components/UI/TitleFirst";
 import { TitleSecond } from "../src/components/UI/TitleSecond";
 import { BtnLink } from "./components/UI/BtnLink";
+import { Header } from "./components/header/Header";
 import { AboutMeContent } from "../src/components/about/AboutMeContent";
 import { AboutImg } from "../src/components/about/AboutImg";
 import { Projects } from "../src/components/projects/Projects";
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <div>
+      <Header />
       <main>
         <section className="leading section">
           <div className="container">
